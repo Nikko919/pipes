@@ -16,8 +16,11 @@
   font-size: 18px;
   color: var(--btn-bg);
   margin-top: 20px;
-  transition: .3s ease-in;
-
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
 }
 
 .catalog-bottom-btn>svg {
@@ -26,6 +29,8 @@
   -moz-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
+  transition: .3s ease-in-out;
+
 }
 
 .catalog-bottom-btn>svg>path {
@@ -144,16 +149,11 @@
 
   .catalog-bottom-btn:hover>svg {
     transform: translate(20px) rotate(-90deg);
-    transition: all .3s ease-in;
-    -webkit-transition: all .3s ease-in;
-    -moz-transition: all .3s ease-in;
-    -ms-transition: all .3s ease-in;
-    -o-transition: all .3s ease-in;
+
   }
 
   .catalog-bottom-btn:hover>svg>rect {
     fill: var(--text-color);
-    transition: .3s ease-in;
   }
 }
 

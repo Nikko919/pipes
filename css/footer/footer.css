@@ -304,6 +304,10 @@
 }
 
 @media(min-width:1200px) {
+  .footer {
+    margin-top: 140px;
+  }
+
   .footer__form {
     padding: 50px 25px;
   }
