@@ -4,7 +4,7 @@
 }
 
 .catalog-btn {
-  width: auto;
+  width: 100%;
   margin-top: 40px;
 }
 
@@ -161,6 +161,7 @@
 
 @media(min-width:1200px) {
   .catalog-btn {
+    width: auto;
     margin-top: 60px;
   }
 
