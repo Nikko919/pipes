@@ -1,0 +1,44 @@
+@import url(../css/base/reset.css);
+@import url(../css/base/vars.css);
+@import url(../css/common/common.css);
+@import url(../css/header/header.css);
+@import url(../css/footer/footer.css);
+@import url(../css/sections/hero.css);
+@import url(../css/sections/about.css);
+@import url(../css/sections/services.css);
+@import url(../css/sections/catalog.css);
+@import url(../css/sections/categories.css);
+@import url(../css/sections/product.css);
+@import url(../css/components/table-info.css);
+
+
+
+
+@font-face {
+  font-family: Inter-Bold;
+  src: url(../fonts/Inter18pt-Bold.woff2);
+}
+
+
+@font-face {
+  font-family: Inter-Medium;
+  src: url(../fonts/Inter18pt-Medium.woff2);
+}
+
+
+@font-face {
+  font-family: Inter-Regular;
+  src: url(../fonts/Inter18pt-Regular.woff2);
+}
+
+
+@font-face {
+  font-family: Inter-SemiBold;
+  src: url(../fonts/Inter18pt-SemiBold.woff2);
+}
+
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(../fonts/Montserrat-Regular.woff2);
+}

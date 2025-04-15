@@ -1,0 +1,90 @@
+.header {
+  padding-top: 32.5px;
+}
+
+.header__body {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+.header__menu-list {
+  display: flex;
+  /* align-items: center; */
+  gap: 15px;
+}
+
+/* выподающий списко */
+
+
+
+
+.submenu {
+  margin-top: 20px;
+  position: absolute;
+  z-index: 20;
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s linear;
+  -webkit-transition: .3s linear;
+  -moz-transition: .3s linear;
+  -ms-transition: .3s linear;
+  -o-transition: .3s linear;
+}
+
+.submenu>li {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.submenu .submenu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+
+}
+
+
+.header__menu-list li:hover>.submenu {
+  visibility: visible;
+  opacity: 1;
+  transition: .3s linear;
+
+}
+
+.submenu a {
+  display: block;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+/* rhynfrn */
+
+
+.header__contacts {
+  display: flex;
+  gap: 20px;
+}
+
+.header__contacts-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__menu-link,
+.header__tel-num {
+  font-family: var(--IRegular);
+  font-size: 16px;
+}
+
+.header__contacts-link-down {
+  margin-right: 70px;
+}

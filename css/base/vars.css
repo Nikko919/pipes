@@ -1,0 +1,83 @@
+:root {
+  --main-bg: #DADBDF;
+  --standart-color: #fff;
+  --accent-bg: #B8FF01;
+  --dark-bg: #252736;
+  --btn-bg: #7E52FF;
+  --colorStatus: #00A91F;
+  --text-color: #000000;
+  --text-color-dark: #020224;
+  --IBold: Inter-Bold, sans-serif;
+  --IMedium: Inter-Medium, sans-serif;
+  --IRegular: Inter-Regular, sans-serif;
+  --ISemiBold: Inter-SemiBold, sans-serif;
+  --MRegular: Montserrat-Regular, sans-serif;
+}
+
+/* подсказка жирность шрифтов  */
+
+/* 100: Thin;
+200: Extra Light (Ultra Light);
+300: Light;
+400: Normal;
+500: Medium;
+600: Semi Bold (Demi Bold);
+700: Bold;
+800: Extra Bold (Ultra Bold);
+900: Black (Heavy). */
+
+
+* {
+  color: var(--text-color);
+  font-size: 14px;
+  font-family: var(--IRegular);
+  line-height: 100%;
+  user-select: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--main-bg);
+}
+
+/* Основной стиль скроллбара */
+::-webkit-scrollbar {
+  width: 3px;
+  height: 5px;
+  border-radius: 1px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+}
+
+/* Стиль ползунка */
+::-webkit-scrollbar-thumb {
+  background-color: #7E52FF;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1800px;
+}

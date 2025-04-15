@@ -1,0 +1,320 @@
+/* картчоки категории  */
+/* 
+.cards__box__category {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(1, 2fr);
+  gap: 30px;
+}
+
+.category__card {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.category__card_link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.category__card__box_img {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.category__card_img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 1.5s;
+  -webkit-transition: 1.5s;
+  -moz-transition: 1.5s;
+  -ms-transition: 1.5s;
+  -o-transition: 1.5s;
+}
+
+.category__card_text {
+  margin-bottom: 30px;
+}
+
+.category__card__title {
+  text-wrap: pretty;
+  font-family: var(--IMedium);
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.category__card__stock {
+  font-family: var(--IMedium);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--colorStock);
+}
+
+.category__card__price {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.category__card__price>span {
+  font-family: var(--IRegular);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.category__card__box_btn_mb {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.category__card__box_btn_pc {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn_arrow {
+  border: 1.5px solid var(--dark-bg);
+}
+
+.btn_arrow>span {
+  font-family: var(--ISemiBold);
+  font-size: 12px;
+}
+
+.btn_arrow>div {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+} */
+/* общие классы */
+
+.title {
+  font-family: var(--ISemiBold);
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+
+/* кнопки */
+
+.hero-btn_dark {
+  width: 100%;
+  font-family: var(--IRegular);
+  font-size: 16px;
+  padding: 12px 10px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  color: var(--standart-color);
+  background-color: var(--text-color-dark);
+  transition: .3s ease-in;
+  -webkit-transition: .3s ease-in;
+  -moz-transition: .3s ease-in;
+  -ms-transition: .3s ease-in;
+  -o-transition: .3s ease-in;
+}
+
+/* зеленая кнопка */
+
+.hero-btn_green {
+  display: inline-block;
+  position: relative;
+  padding: 12px 10px;
+  width: 100%;
+  font-family: var(--IMedium);
+  font-size: 16px;
+  text-align: center;
+  background-color: var(--accent-bg);
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  transition: .3s ease-in;
+  -webkit-transition: .3s ease-in;
+  -moz-transition: .3s ease-in;
+  -ms-transition: .3s ease-in;
+  -o-transition: .3s ease-in;
+}
+
+.hero-btn_green>div {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+
+}
+
+.hero-btn-svg>path {
+  fill: var(--accent-bg);
+  transition: .3s ease-in;
+  -webkit-transition: .3s ease-in;
+  -moz-transition: .3s ease-in;
+  -ms-transition: .3s ease-in;
+  -o-transition: .3s ease-in;
+}
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  font-family: var(--ISemiBold);
+  font-size: 16px;
+  padding: 13px 15px;
+  text-align: center;
+
+}
+
+.btn_green {
+  background-color: var(--accent-bg);
+  border: 1.5px solid var(--text-color-dark);
+  color: var(--text-color-dark);
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  transition: .3s ease-in;
+  -webkit-transition: .3s ease-in;
+  -moz-transition: .3s ease-in;
+  -ms-transition: .3s ease-in;
+  -o-transition: .3s ease-in;
+}
+
+.btn_transparent {
+  width: 100%;
+  /* padding: 10px; */
+  border: 1.5px solid var(--text-color-dark);
+  color: var(--text-color-dark);
+  border-radius: 30px;
+  background-color: transparent;
+  transition: .3s ease-in;
+  -webkit-transition: .3s ease-in;
+  -moz-transition: .3s ease-in;
+  -ms-transition: .3s ease-in;
+  -o-transition: .3s ease-in;
+}
+
+
+
+
+
+
+
+
+
+
+@media(min-width:1024px) {
+
+  /* кнопки  */
+  .hero-btn_dark {
+    width: auto;
+    font-family: var(--IRegular);
+    font-size: 18px;
+    padding: 12px 38px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    color: var(--standart-color);
+    background-color: var(--text-color-dark);
+  }
+
+  .btn {
+    width: auto;
+    font-size: 20px;
+    padding: 12px 44px;
+    text-align: center;
+  }
+
+  .hero-btn_green {
+    padding: 11px 47px 11px 12px;
+    width: auto;
+    font-size: 18px;
+    border: 1.5px solid var(--text-color-dark);
+
+  }
+
+  .hero-btn_green>div {
+    position: absolute;
+    right: 12.5px;
+    top: 8px;
+  }
+
+  .btn_transparent {
+    width: 100%;
+  }
+
+
+
+}
+
+@media(min-width:1200px) {
+  .title {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+}
+
+@media(min-width:1400px) {}
+
+
+
+@media(min-width:1800px) {}
+
+
+@media(hover: hover) {
+
+  /* кнопки */
+  .hero-btn_dark:hover {
+    color: var(--text-color);
+    background-color: var(--accent-bg);
+  }
+
+  .hero-btn_green:hover {
+    background-color: var(--standart-color);
+  }
+
+  .hero-btn_green:hover>div>.hero-btn-svg>path {
+    fill: var(--standart-color);
+  }
+
+  .btn_green:hover {
+    background-color: var(--standart-color);
+
+  }
+
+  .btn_transparent:hover {
+    color: var(--standart-color);
+    background-color: var(--btn-bg);
+    border: 1.5px solid transparent;
+  }
+}
