@@ -70,11 +70,11 @@
   font-size: 16px;
   background-color: var(--accent-bg);
   color: var(--text-color);
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
   transition: .3s linear;
   -webkit-transition: .3s linear;
   -moz-transition: .3s linear;

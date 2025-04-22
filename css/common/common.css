@@ -1,8 +1,12 @@
 .title {
   font-family: var(--ISemiBold);
-  font-size: 22px;
+  font-size: 28px;
 }
 
+.text {
+  font-size: 16px;
+  line-height: 125%;
+}
 
 /* кнопки */
 
@@ -66,7 +70,7 @@
 .btn {
   display: inline-block;
   width: 100%;
-  font-family: var(--ISemiBold);
+  font-family: var(--IMedium);
   font-size: 16px;
   padding: 13px 15px;
   text-align: center;
@@ -100,6 +104,10 @@
   -moz-transition: .3s ease-in;
   -ms-transition: .3s ease-in;
   -o-transition: .3s ease-in;
+}
+
+.catalog__title {
+  margin-bottom: 40px;
 }
 
 @media(min-width:1024px) {
@@ -149,11 +157,14 @@
   .title {
     font-size: 30px;
   }
+
+  .text {
+    font-size: 20px;
+  }
 }
 
-.catalog__title {
-  margin-bottom: 40px;
-}
+
+
 
 @media(hover: hover) {
 

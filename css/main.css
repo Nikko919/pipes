@@ -5,13 +5,12 @@
 @import url(../css/footer/footer.css);
 @import url(../css/sections/hero.css);
 @import url(../css/sections/about.css);
-@import url(../css/sections/services.css);
 @import url(../css/sections/catalog.css);
 @import url(../css/sections/categories.css);
 @import url(../css/sections/product.css);
 @import url(../css/components/table-info.css);
-
-
+@import url(../css/components/hero-tabs.css);
+@import url(../css/sections/servises-tab.css);
 
 
 @font-face {

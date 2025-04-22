@@ -1,0 +1,591 @@
+.services {
+  margin-bottom: 120px;
+}
+
+.services__title {
+  margin-bottom: 30px;
+}
+
+.tab__btn-bottom {
+  transition: .3s ease-in;
+  -webkit-transition: .3s ease-in;
+  -moz-transition: .3s ease-in;
+  -ms-transition: .3s ease-in;
+  -o-transition: .3s ease-in;
+}
+
+.tabs * {
+  box-sizing: border-box;
+}
+
+.tab__btn {
+  color: var(--standart-color);
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.tabs {
+  position: relative;
+  /* margin-bottom: 20px; */
+  min-height: 600px;
+  margin-bottom: 50px;
+  transition: margin-bottom 0.4s ease-in-out;
+
+  /* margin: 20px 0; */
+}
+
+.tabs:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+
+.tab-toggle {
+  display: flex;
+  border-bottom: 2px solid var(--text-color);
+  padding: 20px 0;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+}
+
+.tab-num {
+  font-size: 25px;
+  font-family: var(--MusMedium);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  margin-right: 10px;
+}
+
+.tab-name {
+  text-align: left;
+  padding-right: 35px;
+  font-size: 18px;
+  font-family: var(--IMedium);
+}
+
+.tab-box-icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+.tabs .tab .tab-toggle.active {
+  color: #000;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.tabs .tab .tab-toggle.active .tab-nums .tab-num {
+  color: var(--text-color);
+}
+
+.tab-num,
+.tab-name {
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
+}
+
+.tabs .tab .tab-toggle.active .tab-name {
+  color: var(--text-color);
+  transition: .3s ease-in;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease-in;
+  -ms-transition: .3s ease-in;
+  -o-transition: .3s ease-in;
+}
+
+.tabs .tab .tab-toggle.active .tab-box-icon {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+}
+
+.tab__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: all 0.4s ease-in-out;
+  transform-origin: top;
+}
+
+/* новый код */
+.tabs .content {
+  overflow: hidden;
+  padding: 0;
+  transition: all 0.4s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+  /* padding: 0 0 10px 0; */
+  max-height: 0;
+  transform: translateY(-20px);
+}
+
+.tabs .content.active {
+  max-height: 5000px;
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  margin-bottom: 20px;
+}
+
+
+
+/* мой код */
+
+
+.tab__card-top {
+  overflow: hidden;
+  /* flex-grow: 0; */
+  position: relative;
+  min-height: 345px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 35px;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background: var(--accent-bg);
+}
+
+.tab__content-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.tab__card-btn-box {
+  position: relative;
+  z-index: 5;
+}
+
+.tab-card__img {
+  position: absolute;
+  bottom: 0;
+  right: -35px;
+  width: 40%;
+  /* height: 100%; */
+  object-fit: cover;
+}
+
+.tab__card-top-description-text {
+  font-family: var(--IMedium);
+  color: var(--text-color);
+  /* margin-bottom: 25px; */
+}
+
+.tab__card-top-offer {
+  max-width: 266px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.tab__card-top-offer {
+  max-width: 176px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.offer-top-text {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tab__card-top-offer p {
+  font-family: var(--IRegular);
+  font-size: 14px;
+  font-weight: 400;
+  text-wrap: wrap;
+}
+
+.offer-top-text-num {
+  font-family: var(--MusMedium);
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+.offer__title {
+  font-family: var(--IRegular);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+
+.tab__card-bottom {
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  -webkit-border-radius: 10px;
+  background: var(--btn-bg);
+  overflow: hidden;
+  min-height: 170px;
+}
+
+.tab__card-bottom-content-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  z-index: 2;
+}
+
+.tab-card-bottom__img {
+  position: absolute;
+  /* Устанавливаем абсолютное позиционирование для изображения */
+  top: 0;
+  right: 0;
+  width: 30%;
+  object-fit: cover;
+}
+
+.tab__card-bottom-title {
+  font-family: var(--IMedium);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--standart-color);
+  margin-bottom: 20px;
+}
+
+.tab__card-bottom-description {
+  font-family: var(--IMedium);
+  color: var(--standart-color);
+  margin-bottom: 40px;
+}
+
+.tab__btn-bottom {
+  text-align: center;
+  width: auto;
+  background-color: transparent;
+  border: 1px solid var(--standart-color);
+  color: var(--standart-color);
+  margin-top: auto;
+}
+
+
+
+@media(hover:hover) {
+  .tab__btn-bottom:hover {
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+  }
+
+  .tab-toggle:hover .tab-num {
+    color: var(--btn-bg);
+  }
+
+  .tab-toggle:hover .tab-name {
+    color: var(--btn-bg);
+  }
+
+}
+
+/* подставить уже свертанные кнопки и подогнать  */
+
+@media (min-width: 370px) and (max-width: 500px) {
+  .tab-name {
+    font-size: 16px;
+  }
+
+}
+
+@media (min-width: 760px) {
+  .tab__content {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .tab__card-bottom {
+    min-width: 250px;
+    /* flex: 1 1 auto; */
+  }
+
+  .tab__card-top {
+    flex: 1 1 auto;
+  }
+
+  .tab__card-btn-box>.catalog-btn {
+    width: auto;
+  }
+
+  .tab-card-bottom__img {
+    position: absolute;
+    /* Устанавливаем абсолютное позиционирование для изображения */
+    top: 0;
+    right: 0;
+    width: 50%;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 1024px) {
+  .tab-card__img {
+    position: absolute;
+    bottom: -75px;
+    right: -25px;
+    width: 30%;
+    object-fit: cover;
+  }
+
+
+}
+
+@media screen and (min-width: 1200px) {
+  .services {
+    min-height: 600px;
+  }
+
+  .services__title {
+    margin-bottom: 40px;
+  }
+
+  .tabs {
+    position: relative;
+
+  }
+
+  .tabs .tab {
+    float: left;
+    clear: left;
+    /* изменил процент ширины */
+    width: 30%;
+    margin-bottom: 15px;
+  }
+
+  .tabs .content {
+    width: 65%;
+  }
+
+  .tab-toggle {
+    text-align: left;
+  }
+
+  .tab-box-icon {
+    display: none;
+  }
+
+  .tab-num {
+    font-size: 25px;
+    margin-right: 24px;
+  }
+
+  .tab-name {
+    padding-right: 0;
+    font-size: 25px;
+  }
+
+  .tabs .tab .tab-toggle.active .tab-name {
+    font-weight: 600;
+    color: var(--text-color);
+  }
+
+  .tabs .tab .tab-toggle.active .tab-num {
+    font-weight: 600;
+    color: var(--text-color);
+  }
+
+
+
+  /* изменения */
+  .tab__card-top {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 63px;
+    padding: 25px 15px 15px 15px;
+  }
+
+  .tab__content-box {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 0;
+
+  }
+
+  .tab-card__img {
+    position: absolute;
+    bottom: -75px;
+    right: -25px;
+    width: 50%;
+    object-fit: cover;
+  }
+
+  .tab__card-btn-box>.catalog-btn {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .tab__card-top-offer {
+    max-width: 266px;
+    padding: 35px 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+  }
+
+  .offer-top-text-num {
+    font-size: 30px;
+    margin-right: 7px;
+  }
+
+  .tab__card-top-offer p {
+    font-size: 18px;
+    text-wrap: balance;
+  }
+
+  .tab__card-btn-box>.btn_green {
+    width: 100%;
+  }
+
+  /* вторая карточка  */
+  .tab__card-bottom {
+    padding: 15px 15px 15px 15px;
+  }
+
+  .tab__card-bottom-title {
+    font-size: 22px;
+    margin-bottom: 55px;
+  }
+
+  .tab__card-bottom-description {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .tab-card-bottom__img {
+    position: absolute;
+    /* Устанавливаем абсолютное позиционирование для изображения */
+    top: 0;
+    right: 0;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* новый код  */
+  .tabs .content {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 65%;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    transform: translateX(20px);
+  }
+
+  .tabs .content.active {
+    max-height: 5000px;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .tabs .tab {
+    float: left;
+    clear: left;
+    width: 35%;
+    margin-bottom: 15px;
+  }
+
+  .tabs .content.active {
+    max-height: 5000px;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    margin-bottom: 40px;
+  }
+
+  .tabs .content {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 62%;
+    opacity: 0;
+    /* padding: 0 0 30px 40px; */
+    transition: all 0.4s ease-in-out;
+    transform: translateX(20px);
+  }
+
+  .tab__card-top-description-text {
+    max-width: 485px;
+  }
+
+  .tab__card-btn-box>.btn_green {
+    width: auto;
+  }
+}
+
+@media (min-width: 1800px) {
+  .tabs .tab {
+    width: 30%;
+  }
+
+  .tabs .content {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 65%;
+    opacity: 0;
+    /* padding: 0 0 30px 40px; */
+    transition: all 0.4s ease-in-out;
+    transform: translateX(20px);
+  }
+
+  .tab__card-top-description-text {
+    max-width: 550px;
+  }
+
+  .tab-card__img {
+    position: absolute;
+    bottom: -150px;
+    right: 0px;
+    width: 40%;
+    object-fit: cover;
+  }
+}

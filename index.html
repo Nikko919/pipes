@@ -5,7 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css\main.css">
+  <script src="js/simpleParallax.js" defer></script>
   <script src="js/main.js" defer></script>
+  <script src="js\hero-modals.js" defer></script>
+  <script src="js\hero-tabs.js" defer></script>
+  <script src="js\services.js" defer></script>
   <title>Главная</title>
 </head>
 
@@ -13,95 +17,472 @@
   <div class="wrapper">
     <header class="header">
       <div class="container">
+
       </div>
     </header>
     <main class="main">
       <section class="hero">
-        <!-- <div class="container">
-          <button class="hero-btn_dark">Заполнить заявку</button>
-          <button class="btn btn_green btn_transparent">Заполнить заявку</button>
-          <a href="##" class="hero-btn_green ">Посмотреть услуги
-            <div>
-              <svg class="hero-btn-svg" width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="25.5" width="25" height="25" rx="12.5" transform="rotate(90 25.5 0)" fill="#020224" />
-                <path d="M12.6464 20.3536C12.8417 20.5488 13.1583 20.5488 13.3536 20.3536L16.5355 17.1716C16.7308 16.9763 16.7308 16.6597 16.5355 16.4645C16.3403 16.2692 16.0237 16.2692 15.8284 16.4645L13 19.2929L10.1716 16.4645C9.97631 16.2692 9.65973 16.2692 9.46447 16.4645C9.2692 16.6597 9.2692 16.9763 9.46447 17.1716L12.6464 20.3536ZM12.5 5V20H13.5V5H12.5Z" />
-              </svg>
+        <div class="container">
+          <div class="hero__box">
+            <div class="hero__logo-box">
+              <img class="hero__logo" src="img\logo.svg" alt="">
             </div>
-          </a>
-        </div> -->
+            <div class="catalog__modal">
+              <div class="catalog-popup-box">
+                <button class="catalog-popup-close">&#10006;</button>
+                <div class="catalog-tabs">
+                  <h2 class="catalog-tabs__title active">Трубный прокат</h2>
+                  <h2 class="catalog-tabs__title">Трубы пластиковые</h2>
+                  <h2 class="catalog-tabs__title">Трубы в изоляции</h2>
+                  <h2 class="catalog-tabs__title">Трубопроводная арматура</h2>
+                  <h2 class="catalog-tabs__title">Черный прокат</h2>
+                  <h2 class="catalog-tabs__title">Листовой прокат</h2>
+                </div>
+                <div class="catalog-tabs__content-box">
+                  <div class="catalog-tabs__content active">
+                    <ul class="catalog-tabs-content__list">
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба стальная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба оцинковнная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба в ППУ-изоляции</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба профильная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба профильная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба профильная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба профильная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба профильная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба профильная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба профильная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба профильная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба профильная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба профильная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба профильная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба профильная</a></li>
+                    </ul>
+                  </div>
+                  <div class="catalog-tabs__content">
+                    <ul class="catalog-tabs-content__list">
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба стальная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба стальная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба стальная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба оцинковнная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба оцинковнная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба оцинковнная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба оцинковнная</a></li>
+                    </ul>
+                  </div>
+                  <div class="catalog-tabs__content">
+                    <ul class="catalog-tabs-content__list">
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба стальная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба оцинковнная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба в ППУ-изоляции</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба профильная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба профильная</a></li>
+                    </ul>
+                  </div>
+                  <div class="catalog-tabs__content">
+                    <ul class="catalog-tabs-content__list">
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба стальная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба оцинковнная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба в ППУ-изоляции</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба профильная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба профильная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба профильная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба профильная</a></li>
+                    </ul>
+                  </div>
+                  <div class="catalog-tabs__content">
+                    <ul class="catalog-tabs-content__list">
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба стальная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба оцинковнная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба в ППУ-изоляции</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба профильная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба профильная</a></li>
+                    </ul>
+                  </div>
+                  <div class="catalog-tabs__content">
+                    <ul class="catalog-tabs-content__list">
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба стальная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба оцинковнная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба оцинковнная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба оцинковнная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба оцинковнная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба оцинковнная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба в ППУ-изоляции</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба профильная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба профильная</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero-left">
+              <div class="hero-catalog-box-btn open-catalog">
+                <button class="hero-catalog-box">Посмотреть каталог </button>
+                <div class="btn-arrow-box">
+                  <div class="svg-box">
+                    <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.2843 1.14217L14.2843 0.142169L15.2843 0.142169L15.2843 1.14217L14.2843 1.14217ZM1.73311 15.1075C1.34259 15.4981 0.709423 15.4981 0.318898 15.1075C-0.0716258 14.717 -0.0716255 14.0838 0.318898 13.6933L1.73311 15.1075ZM3.67766 0.142169H14.2843L14.2843 2.14217H3.67766L3.67766 0.142169ZM15.2843 1.14217L15.2843 11.7488H13.2843L13.2843 1.14217L15.2843 1.14217ZM14.9914 1.84928L1.73311 15.1075L0.318898 13.6933L13.5772 0.435062L14.9914 1.84928Z" fill="black" />
+                    </svg>
+                  </div>
+                  <div class="btn-arrow-box-square"></div>
+                </div>
+              </div>
+              <div class="hero__box-img">
+                <img class="hero__img" src="img\Leonardo_Kino_XL_Create_a_highly_detailed_and_realistic_image_0-Photoroom (2) (1) (1).png" alt="">
+              </div>
+              <h1 class="hero__title">Ваш надежный партнер в мире труб: от идеи до реализации!</h1>
+              <div class="hero__box-btn">
+                <button class="hero-btn_dark hero-btn-color">Заполнить заявку</button>
+                <a href="##" class="hero-btn_green ">Посмотреть услуги
+                  <div>
+                    <svg class="hero-btn-svg" width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="25.5" width="25" height="25" rx="12.5" transform="rotate(90 25.5 0)" fill="#020224" />
+                      <path d="M12.6464 20.3536C12.8417 20.5488 13.1583 20.5488 13.3536 20.3536L16.5355 17.1716C16.7308 16.9763 16.7308 16.6597 16.5355 16.4645C16.3403 16.2692 16.0237 16.2692 15.8284 16.4645L13 19.2929L10.1716 16.4645C9.97631 16.2692 9.65973 16.2692 9.46447 16.4645C9.2692 16.6597 9.2692 16.9763 9.46447 17.1716L12.6464 20.3536ZM12.5 5V20H13.5V5H12.5Z" />
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="hero-right">
+              <div class="hero-right__img-box">
+                <img src="img\pipesH (1).png" alt="" class="hero-right__img">
+              </div>
+              <div class="hero-right__content">
+                <button class="hero-right-btn">
+                  <span class="hero-right-btn__title">Заказать расчет</span>
+                  <span class="hero-right__subtitle">Обрабатка за 24 часа</span>
+                </button>
+                <a href="##" class="hero-right-btn">
+                  <span class="hero-right-btn__title">Заказать расчет</span>
+                  <span class="hero-right__subtitle">Обрабатка за 24 часа</span>
+                </a>
+              </div>
+              <div class="hero-right-box-btn">
+                <button class="hero-btn_dark open-pup">Заполнить заявку</button>
+                <a href="##" class="hero-btn_green ">Посмотреть услуги
+                  <div>
+                    <svg class="hero-btn-svg" width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="25.5" width="25" height="25" rx="12.5" transform="rotate(90 25.5 0)" fill="#020224" />
+                      <path d="M12.6464 20.3536C12.8417 20.5488 13.1583 20.5488 13.3536 20.3536L16.5355 17.1716C16.7308 16.9763 16.7308 16.6597 16.5355 16.4645C16.3403 16.2692 16.0237 16.2692 15.8284 16.4645L13 19.2929L10.1716 16.4645C9.97631 16.2692 9.65973 16.2692 9.46447 16.4645C9.2692 16.6597 9.2692 16.9763 9.46447 17.1716L12.6464 20.3536ZM12.5 5V20H13.5V5H12.5Z" />
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="container"> -->
+        <!-- <button class="btn btn_green btn_transparent">Заполнить заявку</button> -->
+        <!-- </div> -->
       </section>
       <section class="about">
         <div class="container">
           <div class="about__body">
             <div class="about__cards">
               <div class="about__card ">
-                <div class="about__card-top card-top">
-                  <h2 class="card-top__title title">О компании</h2>
-                  <p class="card-top__description">Мы предлагаем только высококачественные трубы, предлагаем только высококачественные трубы, предлагаем только высококачественные трубы предлагаем только высококачественные трубы соответствующие международным стандартам.</p>
+                <div class="about__card-top about-card">
+                  <h2 class="about-card__title title">О компании</h2>
+                  <div class="about-card__description">
+                    <p class="about-card__description-text text">Мы предлагаем только высококачественные трубы, предлагаем только высококачественные трубы, предлагаем только высококачественные трубы предлагаем только высококачественные трубы соответствующие международным стандартам.</p>
+                  </div>
                 </div>
-                <div class="about__card-bottom card-one-bottom">
-                  <div class="card-bottom__box-img ">
-                    <img src="img\1.jpeg" alt="" class="card-bottom__img  ">
+                <div class="about__card-bottom">
+                  <div class="card-bottom__box-img">
+                    <img src="img\1.jpeg" alt="" class="card-bottom__img  thumbnail">
                   </div>
                 </div>
               </div>
               <div class="about__card ">
-                <div class="about__card-top card-top">
-                  <p class="card-top__description">Мы предлагаем предлагаем только высококачественные трубы предлагаем только высококачественные трубы соответствующие международным стандартам.</p>
+                <div class="about__card-top about-card">
+                  <div class="about-card__description">
+                    <p class="about-card__description-text text">Мы предлагаем только высококачественные трубы, предлагаем только высококачественные трубы, предлагаем только высококачественные трубы предлагаем только высококачественные трубы соответствующие международным стандартам.</p>
+                  </div>
                 </div>
-                <div class="about__card-bottom card-one-bottom">
-                  <div class="card-bottom__box-img ">
-                    <img src="img\2.jpeg" alt="" class="card-bottom__img  ">
+                <div class="about__card-bottom">
+                  <div class="card-bottom__box-img">
+                    <img src="img\2.jpeg" alt="" class="card-bottom__img thumbnail">
                   </div>
                 </div>
               </div>
               <div class="about__card ">
-                <div class="about__card-top card-top">
-                  <p class="card-top__description">Мы предлагаем только высококачественные трубы предлагаем только высококачественные трубы соответствующие международным стандартам.</p>
+                <div class="about__card-top about-card">
+                  <div class="about-card__description">
+                    <!-- не больше 218 сивалов в текстовом блоке -->
+                    <p class="about-card__description-text text">Мы предлагаем только высококачественные трубы, предлагаем только высококачественные трубы, предлагаем только высококачественные трубы предлагаем только высококачественные трубы соответствующие международным стандартам.</p>
+                  </div>
                 </div>
-                <div class="about__card-bottom card-one-bottom">
-                  <div class="card-bottom__box-img ">
-                    <img src="img\3.jpeg" alt="" class="card-bottom__img  ">
+                <div class="about__card-bottom">
+                  <div class="card-bottom__box-img">
+                    <img src="img\3.jpeg" alt="" class="card-bottom__img thumbnail">
                   </div>
                 </div>
               </div>
-
-
-
-
-
-
-
-              <!-- <div class="about__card  card-one">
-                <div class="about__card-top card-top">
-                  <p class="card-top__description">Мы предлагаем только высококачественные трубы, соответствующие международным стандартам.</p>
-                </div>
-                <div class="about__card-bottom card-bottom">
-                  <div class="card-bottom__box-img">
-                    <img src="img\2.jpeg" alt="" class="card-bottom__img card-bottom__img-right">
-                  </div>
-                </div>
-              </div>
-              <div class="about__card  card-one">
-                <div class="about__card-top card-top">
-                  <p class="card-top__description">Мы предлагаем только высококачественные трубы, соответствующие предлагаем только высококачественные трубы, соответствующие международным стандартам.</p>
-                </div>
-                <div class="about__card-bottom card-bottom">
-                  <div class="card-bottom__box-img">
-                    <img src="img\f702b1a59e6034b894640eeb5e858340.png" alt="" class="card-bottom__img card-bottom__img-left">
-                  </div>
-                </div>
-              </div> -->
             </div>
           </div>
         </div>
       </section>
       <section class="services">
         <div class="container">
+          <div class="services__content">
+            <h2 class="services__title title">Услуги</h2>
+          </div>
+          <div class="tabs-container">
+            <div class="tabs">
+              <div class="tab-box">
+                <div class="tab">
+                  <div class="tab-toggle">
+                    <span class="tab-nums">
+                      <span class="tab-num">#01</span>
+                    </span>
+                    <span class="tab-name">Внутренние эпоксидные покрытия</span>
+                    <div class="tab-box-icon">
+                      <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="25.5" width="25" height="25" rx="12.5" transform="rotate(90 25.5 0)" fill="#020224" />
+                        <path d="M12.6464 20.3536C12.8417 20.5488 13.1583 20.5488 13.3536 20.3536L16.5355 17.1716C16.7308 16.9763 16.7308 16.6597 16.5355 16.4645C16.3403 16.2692 16.0237 16.2692 15.8284 16.4645L13 19.2929L10.1716 16.4645C9.97631 16.2692 9.65973 16.2692 9.46447 16.4645C9.2692 16.6597 9.2692 16.9763 9.46447 17.1716L12.6464 20.3536ZM12.5 5V20H13.5V5H12.5Z" fill="#B8FF01" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="content">
+                  <div class="tab__content">
+                    <div class="tab__card-top">
+                      <img class="tab-card__img" src="img\f702b1a59e6034b894640eeb5e858340.png" alt="">
+                      <div class="tab__content-box">
+                        <div class="tab__card-top-description">
+                          <!-- ьаксимальное количество симвалов 328 -->
+                          <p class="tab__card-top-description-text text">
+                            Принцип обработки в дробеметной установке заключается в воздействии на поверхность дробеметной установке заключается в воздействии дробеметной установке заключается в воздействии дробеметной установке заключается в воздействии трубы абразива, разгоняемого центробежной силой до высоких скоростей с помощью метательной турбины.
+                          </p>
+                        </div>
+                        <div class="tab__card-top-offer offer">
+                          <div class="offer-top-text">
+                            <span class="offer-top-text-num">+500</span><span class="offer__title">вариантов</span>
+                          </div>
+                          <p>для выбора подходящего товара </p>
+                        </div>
+                      </div>
+                      <div class="tab__card-btn-box">
+                        <a href="##" class="btn btn_green open-popup ">Заказать готовые материалы</a>
+                      </div>
 
+                      <!-- <a class="btn btn_color-green tab__btn" href="##"><span>Заказать готовые материалы</span></a> -->
+                    </div>
+                    <div class="tab__card-bottom">
+                      <img class="tab-card-bottom__img" src="img\Leonardo_Kino_XL_Create_a_highly_detailed_and_realistic_image_0-Photoroom (2) (1) (1).png" alt="">
+                      <div class="tab__card-bottom-content-box">
+                        <sapn class="tab__card-bottom-title">Остались вопросы?</sapn>
+                        <span class="tab__card-bottom-description text">Отправь заявку и мы перезвоним</span>
+                        <a class="btn btn_transparent tab__btn-bottom " href="tel:">Отправить заявку</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-box">
+                <div class="tab">
+                  <div class="tab-toggle">
+                    <span class="tab-nums">
+                      <span class="tab-num">#02</span>
+                    </span>
+                    <span class="tab-name">Внутренние эпоксидные покрытия</span>
+                    <div class="tab-box-icon">
+                      <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="25.5" width="25" height="25" rx="12.5" transform="rotate(90 25.5 0)" fill="#020224" />
+                        <path d="M12.6464 20.3536C12.8417 20.5488 13.1583 20.5488 13.3536 20.3536L16.5355 17.1716C16.7308 16.9763 16.7308 16.6597 16.5355 16.4645C16.3403 16.2692 16.0237 16.2692 15.8284 16.4645L13 19.2929L10.1716 16.4645C9.97631 16.2692 9.65973 16.2692 9.46447 16.4645C9.2692 16.6597 9.2692 16.9763 9.46447 17.1716L12.6464 20.3536ZM12.5 5V20H13.5V5H12.5Z" fill="#B8FF01" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="content">
+                  <div class="tab__content">
+                    <div class="tab__card-top">
+                      <img class="tab-card__img" src="img\f702b1a59e6034b894640eeb5e858340.png" alt="">
+                      <div class="tab__content-box">
+                        <div class="tab__card-top-description">
+                          <!-- ьаксимальное количество симвалов 328 -->
+                          <p class="tab__card-top-description-text text">
+                            Принцип обработки в дробеметной установке заключается в воздействии на поверхность дробеметной установке заключается в воздействии дробеметной установке.
+                          </p>
+                        </div>
+                        <div class="tab__card-top-offer offer">
+                          <div class="offer-top-text">
+                            <span class="offer-top-text-num">+500</span><span class="offer__title">вариантов</span>
+                          </div>
+                          <p>для выбора подходящего товара </p>
+                        </div>
+                      </div>
+                      <div class="tab__card-btn-box">
+                        <a href="##" class="btn btn_green open-popup ">Заказать готовые материалы</a>
+                      </div>
+
+                      <!-- <a class="btn btn_color-green tab__btn" href="##"><span>Заказать готовые материалы</span></a> -->
+                    </div>
+                    <div class="tab__card-bottom">
+                      <img class="tab-card-bottom__img" src="img\Leonardo_Kino_XL_Create_a_highly_detailed_and_realistic_image_0-Photoroom (2) (1) (1).png" alt="">
+                      <div class="tab__card-bottom-content-box">
+                        <sapn class="tab__card-bottom-title">Остались вопросы?</sapn>
+                        <span class="tab__card-bottom-description text">Отправь заявку и мы перезвоним</span>
+                        <a class="btn btn_transparent tab__btn-bottom " href="tel:">Отправить заявку</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-box">
+                <div class="tab">
+                  <div class="tab-toggle">
+                    <span class="tab-nums">
+                      <span class="tab-num">#03</span>
+                    </span>
+                    <span class="tab-name">Внутренние эпоксидные покрытия</span>
+                    <div class="tab-box-icon">
+                      <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="25.5" width="25" height="25" rx="12.5" transform="rotate(90 25.5 0)" fill="#020224" />
+                        <path d="M12.6464 20.3536C12.8417 20.5488 13.1583 20.5488 13.3536 20.3536L16.5355 17.1716C16.7308 16.9763 16.7308 16.6597 16.5355 16.4645C16.3403 16.2692 16.0237 16.2692 15.8284 16.4645L13 19.2929L10.1716 16.4645C9.97631 16.2692 9.65973 16.2692 9.46447 16.4645C9.2692 16.6597 9.2692 16.9763 9.46447 17.1716L12.6464 20.3536ZM12.5 5V20H13.5V5H12.5Z" fill="#B8FF01" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="content">
+                  <div class="tab__content">
+                    <div class="tab__card-top">
+                      <img class="tab-card__img" src="img\f702b1a59e6034b894640eeb5e858340.png" alt="">
+                      <div class="tab__content-box">
+                        <div class="tab__card-top-description">
+                          <!-- ьаксимальное количество симвалов 328 -->
+                          <p class="tab__card-top-description-text text">
+                            Принцип обработки в дробеметной установке заключается в воздействии на поверхность дробеметной установке заключается в воздействии дробеметной установке заключается в воздействии дробеметной установке заключается в воздействии трубы абразива, разгоняемого центробежной силой до высоких скоростей с помощью метательной турбины.
+                          </p>
+                        </div>
+                        <div class="tab__card-top-offer offer">
+                          <div class="offer-top-text">
+                            <span class="offer-top-text-num">+500</span><span class="offer__title">вариантов</span>
+                          </div>
+                          <p>для выбора подходящего товара </p>
+                        </div>
+                      </div>
+                      <div class="tab__card-btn-box">
+                        <a href="##" class="btn btn_green open-popup ">Заказать готовые материалы</a>
+                      </div>
+
+                      <!-- <a class="btn btn_color-green tab__btn" href="##"><span>Заказать готовые материалы</span></a> -->
+                    </div>
+                    <div class="tab__card-bottom">
+                      <img class="tab-card-bottom__img" src="img\Leonardo_Kino_XL_Create_a_highly_detailed_and_realistic_image_0-Photoroom (2) (1) (1).png" alt="">
+                      <div class="tab__card-bottom-content-box">
+                        <sapn class="tab__card-bottom-title">Остались вопросы?</sapn>
+                        <span class="tab__card-bottom-description text">Отправь заявку и мы перезвоним</span>
+                        <a class="btn btn_transparent tab__btn-bottom " href="tel:">Отправить заявку</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-box">
+                <div class="tab">
+                  <div class="tab-toggle">
+                    <span class="tab-nums">
+                      <span class="tab-num">#04</span>
+                    </span>
+                    <span class="tab-name">Внутренние эпоксидные покрытия</span>
+                    <div class="tab-box-icon">
+                      <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="25.5" width="25" height="25" rx="12.5" transform="rotate(90 25.5 0)" fill="#020224" />
+                        <path d="M12.6464 20.3536C12.8417 20.5488 13.1583 20.5488 13.3536 20.3536L16.5355 17.1716C16.7308 16.9763 16.7308 16.6597 16.5355 16.4645C16.3403 16.2692 16.0237 16.2692 15.8284 16.4645L13 19.2929L10.1716 16.4645C9.97631 16.2692 9.65973 16.2692 9.46447 16.4645C9.2692 16.6597 9.2692 16.9763 9.46447 17.1716L12.6464 20.3536ZM12.5 5V20H13.5V5H12.5Z" fill="#B8FF01" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="content">
+                  <div class="tab__content">
+                    <div class="tab__card-top">
+                      <img class="tab-card__img" src="img\f702b1a59e6034b894640eeb5e858340.png" alt="">
+                      <div class="tab__content-box">
+                        <div class="tab__card-top-description">
+                          <!-- ьаксимальное количество симвалов 328 -->
+                          <p class="tab__card-top-description-text text">
+                            Принцип обработки в дробеметной установке заключается в воздействии на поверхность дробеметной установке заключается в воздействии дробеметной установке заключается в воздействии дробеметной установке заключается в воздействии трубы абразива, разгоняемого центробежной силой до высоких скоростей с помощью метательной турбины.
+                          </p>
+                        </div>
+                        <div class="tab__card-top-offer offer">
+                          <div class="offer-top-text">
+                            <span class="offer-top-text-num">+500</span><span class="offer__title">вариантов</span>
+                          </div>
+                          <p>для выбора подходящего товара </p>
+                        </div>
+                      </div>
+                      <div class="tab__card-btn-box">
+                        <a href="##" class="btn btn_green open-popup ">Заказать готовые материалы</a>
+                      </div>
+
+                      <!-- <a class="btn btn_color-green tab__btn" href="##"><span>Заказать готовые материалы</span></a> -->
+                    </div>
+                    <div class="tab__card-bottom">
+                      <img class="tab-card-bottom__img" src="img\Leonardo_Kino_XL_Create_a_highly_detailed_and_realistic_image_0-Photoroom (2) (1) (1).png" alt="">
+                      <div class="tab__card-bottom-content-box">
+                        <sapn class="tab__card-bottom-title">Остались вопросы?</sapn>
+                        <span class="tab__card-bottom-description text">Отправь заявку и мы перезвоним</span>
+                        <a class="btn btn_transparent tab__btn-bottom " href="tel:">Отправить заявку</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-box">
+                <div class="tab">
+                  <div class="tab-toggle">
+                    <span class="tab-nums">
+                      <span class="tab-num">#05</span>
+                    </span>
+                    <span class="tab-name">Внутренние эпоксидные покрытия</span>
+                    <div class="tab-box-icon">
+                      <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="25.5" width="25" height="25" rx="12.5" transform="rotate(90 25.5 0)" fill="#020224" />
+                        <path d="M12.6464 20.3536C12.8417 20.5488 13.1583 20.5488 13.3536 20.3536L16.5355 17.1716C16.7308 16.9763 16.7308 16.6597 16.5355 16.4645C16.3403 16.2692 16.0237 16.2692 15.8284 16.4645L13 19.2929L10.1716 16.4645C9.97631 16.2692 9.65973 16.2692 9.46447 16.4645C9.2692 16.6597 9.2692 16.9763 9.46447 17.1716L12.6464 20.3536ZM12.5 5V20H13.5V5H12.5Z" fill="#B8FF01" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="content">
+                  <div class="tab__content">
+                    <div class="tab__card-top">
+                      <img class="tab-card__img" src="img\f702b1a59e6034b894640eeb5e858340.png" alt="">
+                      <div class="tab__content-box">
+                        <div class="tab__card-top-description">
+                          <!-- ьаксимальное количество симвалов 328 -->
+                          <p class="tab__card-top-description-text text">
+                            Принцип обработки в дробеметной установке заключается в воздействии на поверхность дробеметной установке заключается в воздействии дробеметной установке заключается в воздействии дробеметной установке заключается в воздействии трубы абразива, разгоняемого центробежной силой до высоких скоростей с помощью метательной турбины.
+                          </p>
+                        </div>
+                        <div class="tab__card-top-offer offer">
+                          <div class="offer-top-text">
+                            <span class="offer-top-text-num">+500</span><span class="offer__title">вариантов</span>
+                          </div>
+                          <p>для выбора подходящего товара </p>
+                        </div>
+                      </div>
+                      <div class="tab__card-btn-box">
+                        <a href="##" class="btn btn_green open-popup ">Заказать готовые материалы</a>
+                      </div>
+
+                      <!-- <a class="btn btn_color-green tab__btn" href="##"><span>Заказать готовые материалы</span></a> -->
+                    </div>
+                    <div class="tab__card-bottom">
+                      <img class="tab-card-bottom__img" src="img\Leonardo_Kino_XL_Create_a_highly_detailed_and_realistic_image_0-Photoroom (2) (1) (1).png" alt="">
+                      <div class="tab__card-bottom-content-box">
+                        <sapn class="tab__card-bottom-title">Остались вопросы?</sapn>
+                        <span class="tab__card-bottom-description text">Отправь заявку и мы перезвоним</span>
+                        <a class="btn btn_transparent tab__btn-bottom " href="tel:">Отправить заявку</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
         </div>
       </section>
-
       <section class="catalog">
         <div class="container">
           <h2 class="catalog__title title">Каталог</h2>
@@ -180,10 +561,11 @@
             </div>
           </div>
           <a href="page-catalog.html" class="catalog-bottom-btn">Смотреть весь каталог
-            <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="25.5" width="25" height="25" rx="12.5" transform="rotate(90 25.5 0)" />
-              <path d="M12.6464 20.3536C12.8417 20.5488 13.1583 20.5488 13.3536 20.3536L16.5355 17.1716C16.7308 16.9763 16.7308 16.6597 16.5355 16.4645C16.3403 16.2692 16.0237 16.2692 15.8284 16.4645L13 19.2929L10.1716 16.4645C9.97631 16.2692 9.65973 16.2692 9.46447 16.4645C9.2692 16.6597 9.2692 16.9763 9.46447 17.1716L12.6464 20.3536ZM12.5 5V20H13.5V5H12.5Z" />
-            </svg>
+            <div class="catalog-bottom-btn-svg-box">
+              <svg viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.6464 20.3536C12.8417 20.5488 13.1583 20.5488 13.3536 20.3536L16.5355 17.1716C16.7308 16.9763 16.7308 16.6597 16.5355 16.4645C16.3403 16.2692 16.0237 16.2692 15.8284 16.4645L13 19.2929L10.1716 16.4645C9.97631 16.2692 9.65973 16.2692 9.46447 16.4645C9.2692 16.6597 9.2692 16.9763 9.46447 17.1716L12.6464 20.3536ZM12.5 5V20H13.5V5H12.5Z" />
+              </svg>
+            </div>
           </a>
         </div>
       </section>
@@ -295,5 +677,7 @@
     </footer>
   </div>
 </body>
+
+</html>
 
 </html>
