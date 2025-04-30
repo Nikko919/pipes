@@ -10,6 +10,8 @@
   <script src="js\hero-modals.js" defer></script>
   <script src="js\hero-tabs.js" defer></script>
   <script src="js\services.js" defer></script>
+  <script src="js\burger.js" defer></script>
+  <script src="js\formClouse.js" defer></script>
   <title>Главная</title>
 </head>
 
@@ -17,7 +19,53 @@
   <div class="wrapper">
     <header class="header">
       <div class="container">
-
+        <div class="header__inner">
+          <div class="burger">
+            <div class="burger__line-box">
+              <div class="burger__line"></div>
+              <div class="burger__line"></div>
+              <div class="burger__line"></div>
+            </div>
+            <span>Меню</span>
+          </div>
+          <div class="header__body">
+            <nav class="header__menu">
+              <ul class="header__list">
+                <li class="header__list-item"><a href="##" class="header__list-link">Главная</a></li>
+                <li class="header__list-item"><a href="#about" class="header__list-link">Компания</a></li>
+                <li class="header__list-item"><a href="page-catalog.html" class="header__list-link">Каталог</a></li>
+                <li class="header__list-item"><a href="#contact" class="header__list-link">Контакты</a></li>
+                <li class="header__list-item"><a href="#services" class="header__list-link">Услуги</a></li>
+              </ul>
+            </nav>
+            <div class="header__contacts">
+              <a href="##" class="header__contacts-link">
+                Скачать реквизиты
+                <div class="header__contacts-link-icon-box">
+                  <svg class="header__contacts-link-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.8297 12.8192L9.20285 17.458C8.27496 18.1075 7 17.4437 7 16.3111L7 7.68892C7 6.55628 8.27496 5.89247 9.20285 6.54199L15.8297 11.1808C16.3984 11.5789 16.3984 12.4211 15.8297 12.8192Z" />
+                  </svg>
+                </div>
+              </a>
+              <a href="##" class="header__contacts-link">
+                <div class="header__contacts-link-icon-box">
+                  <svg class="header__contacts-link-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.67962 1.32038L3.29289 0.707107C3.68342 0.316583 4.31658 0.316582 4.70711 0.707106L7.29289 3.29289C7.68342 3.68342 7.68342 4.31658 7.29289 4.70711L5.50048 6.49952C5.2016 6.7984 5.1275 7.255 5.31653 7.63307C6.40929 9.81858 8.18142 11.5907 10.3669 12.6835C10.745 12.8725 11.2016 12.7984 11.5005 12.4995L13.2929 10.7071C13.6834 10.3166 14.3166 10.3166 14.7071 10.7071L17.2929 13.2929C17.6834 13.6834 17.6834 14.3166 17.2929 14.7071L16.6796 15.3204C14.5683 17.4317 11.2257 17.6693 8.83698 15.8777L7.62857 14.9714C5.88504 13.6638 4.33622 12.115 3.02857 10.3714L2.12226 9.16302C0.330722 6.7743 0.568269 3.43173 2.67962 1.32038Z" />
+                  </svg>
+                </div>
+                +7(000)000-00-00
+              </a>
+              <a href="##" class="header__contacts-link">
+                <div class="header__contacts-link-icon-box">
+                  <svg class="header__contacts-link-icon" width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.39804 15.804C8.88097 15.0348 14 12.0163 14 7C14 3.13401 10.866 0 7 0C3.13401 0 0 3.13401 0 7C0 12.0163 5.11903 15.0348 6.60196 15.804C6.85483 15.9351 7.14517 15.9351 7.39804 15.804ZM7 10C8.65685 10 10 8.65685 10 7C10 5.34315 8.65685 4 7 4C5.34315 4 4 5.34315 4 7C4 8.65685 5.34315 10 7 10Z" />
+                  </svg>
+                </div>
+                Город
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -41,7 +89,7 @@
                 <div class="catalog-tabs__content-box">
                   <div class="catalog-tabs__content active">
                     <ul class="catalog-tabs-content__list">
-                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба стальная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="page-product.html" class="catalog-tabs-content__link">Труба стальная</a></li>
                       <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба оцинковнная</a></li>
                       <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба в ППУ-изоляции</a></li>
                       <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба профильная</a></li>
@@ -71,11 +119,11 @@
                   </div>
                   <div class="catalog-tabs__content">
                     <ul class="catalog-tabs-content__list">
-                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба стальная</a></li>
-                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба оцинковнная</a></li>
-                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба в ППУ-изоляции</a></li>
-                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба профильная</a></li>
-                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба профильная</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба ВУС</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба ВУС</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба ВУС</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба ВУС</a></li>
+                      <li class="catalog-tabs-content__item"><a href="##" class="catalog-tabs-content__link">Труба ВУС</a></li>
                     </ul>
                   </div>
                   <div class="catalog-tabs__content">
@@ -147,7 +195,7 @@
                 <img src="img\pipesH (1).png" alt="" class="hero-right__img">
               </div>
               <div class="hero-right__content">
-                <button class="hero-right-btn">
+                <button class="hero-right-btn open-popup" id="openPopupBtn2" data-target="popup2">
                   <span class="hero-right-btn__title">Заказать расчет</span>
                   <span class="hero-right__subtitle">Обрабатка за 24 часа</span>
                 </button>
@@ -157,8 +205,8 @@
                 </a>
               </div>
               <div class="hero-right-box-btn">
-                <button class="hero-btn_dark open-pup">Заполнить заявку</button>
-                <a href="##" class="hero-btn_green ">Посмотреть услуги
+                <button class="hero-btn_dark open-popup" id="openPopupBtn1" data-target="popup1">Заполнить заявку</button>
+                <a href="#services" class="hero-btn_green ">Посмотреть услуги
                   <div>
                     <svg class="hero-btn-svg" width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <rect x="25.5" width="25" height="25" rx="12.5" transform="rotate(90 25.5 0)" fill="#020224" />
@@ -174,7 +222,7 @@
         <!-- <button class="btn btn_green btn_transparent">Заполнить заявку</button> -->
         <!-- </div> -->
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
           <div class="about__body">
             <div class="about__cards">
@@ -182,6 +230,7 @@
                 <div class="about__card-top about-card">
                   <h2 class="about-card__title title">О компании</h2>
                   <div class="about-card__description">
+                    <!-- не больше 220 симвалов -->
                     <p class="about-card__description-text text">Мы предлагаем только высококачественные трубы, предлагаем только высококачественные трубы, предлагаем только высококачественные трубы предлагаем только высококачественные трубы соответствующие международным стандартам.</p>
                   </div>
                 </div>
@@ -194,7 +243,7 @@
               <div class="about__card ">
                 <div class="about__card-top about-card">
                   <div class="about-card__description">
-                    <p class="about-card__description-text text">Мы предлагаем только высококачественные трубы, предлагаем только высококачественные трубы, предлагаем только высококачественные трубы предлагаем только высококачественные трубы соответствующие международным стандартам.</p>
+                    <p class="about-card__description-text text">Мы предлагаем только высококачественные трубы, предлагаем только высококачественные трубы, предлагаем только высококачественные трубы предлагаем только высококачественные трубы соответствующие международным стандартам. Мы предлагаем только высококачественные трубы, предлагаем только высококачественные трубы, предлагаем только высококачественные трубы предлагаем только высококачественные трубы соответствующие международным стандартам. </p>
                   </div>
                 </div>
                 <div class="about__card-bottom">
@@ -207,7 +256,7 @@
                 <div class="about__card-top about-card">
                   <div class="about-card__description">
                     <!-- не больше 218 сивалов в текстовом блоке -->
-                    <p class="about-card__description-text text">Мы предлагаем только высококачественные трубы, предлагаем только высококачественные трубы, предлагаем только высококачественные трубы предлагаем только высококачественные трубы соответствующие международным стандартам.</p>
+                    <p class="about-card__description-text text">Мы предлагаем только высококачественные трубы, предлагаем только высококачественные трубы, предлагаем только высококачественные предлагаем только высококачественные предлагаем только высококачественные </p>
                   </div>
                 </div>
                 <div class="about__card-bottom">
@@ -220,7 +269,7 @@
           </div>
         </div>
       </section>
-      <section class="services">
+      <section class="services" id="services">
         <div class="container">
           <div class="services__content">
             <h2 class="services__title title">Услуги</h2>
@@ -230,9 +279,7 @@
               <div class="tab-box">
                 <div class="tab">
                   <div class="tab-toggle">
-                    <span class="tab-nums">
-                      <span class="tab-num">#01</span>
-                    </span>
+                    <span class="tab-num">#01</span>
                     <span class="tab-name">Внутренние эпоксидные покрытия</span>
                     <div class="tab-box-icon">
                       <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -271,7 +318,7 @@
                       <div class="tab__card-bottom-content-box">
                         <sapn class="tab__card-bottom-title">Остались вопросы?</sapn>
                         <span class="tab__card-bottom-description text">Отправь заявку и мы перезвоним</span>
-                        <a class="btn btn_transparent tab__btn-bottom " href="tel:">Отправить заявку</a>
+                        <a class="btn btn_transparent tab__btn-bottom open-popup " href="tel:">Отправить заявку</a>
                       </div>
                     </div>
                   </div>
@@ -483,10 +530,13 @@
           </div>
         </div>
       </section>
-      <section class="catalog">
+      <section class="catalog catalog-home ">
         <div class="container">
           <h2 class="catalog__title title">Каталог</h2>
           <div class="catalog__cards">
+
+
+
             <div class="catalog__card  catalog-card">
               <a href="page-catalog.html" class="catalog-card__main-link"></a>
               <div class="catalog-card__box-img">
@@ -499,6 +549,8 @@
                 </div>
               </div>
             </div>
+
+
             <div class="catalog__card  catalog-card">
               <a href="##" class="catalog-card__main-link"></a>
               <div class="catalog-card__box-img">
@@ -637,7 +689,7 @@
                   <li class="list-menu__item"><a class="list-menu__item-link  " href="##">О компании</a></li>
                 </ul>
               </div>
-              <div class="footer-mid__column">
+              <div class="footer-mid__column" id="contact">
                 <ul class="footer-mid__column-list-contact list-contact">
                   <li class="list-contact__item"><a class="list-menu__item-link list-menu__item-link_color " href="tel:">+7(000)000-00-00</a></li>
                   <li class="list-contact__item"><a class="list-menu__item-link list-menu__item-link_color" href="tel:">+7(000)000-00-00</a></li>
@@ -675,9 +727,60 @@
         </div>
       </div>
     </footer>
+    <div class="popup-footer-windows">
+      <div id="popupBg1" class="popup__bg">
+        <div id="popup1" class="popup">
+          <div id="closePopupBtn1" class="close-popup">&#215</div>
+          <div class="popup__top">
+            <div class="popup__title">Оставить заявку</div>
+            <div class="popup__text">Наш менеджер свяжется с Вами</div>
+          </div>
+          <form class="popup__form">
+            <div class="popup__inputs">
+              <div class="popup__inputs-top">
+                <input type="text" class="popup__input" placeholder="Имя и Фамилия">
+                <input type="text" class="popup__input" placeholder="Номер телефона">
+                <input type="text" class="popup__input" placeholder="Электронная почта">
+                <!-- <textarea class="popup__textarea" placeholder="Ваш комментарий"></textarea> -->
+              </div>
+              <div class="popup__inputs-bottom">
+                <p class="popup__inputs-link">Нажимая на кнопку, вы соглашаетесь с условиями политики конфеденциальности</p>
+                <div class="popup__box-btn">
+                  <button class="popup__btn btn hero-btn_green">Оставить заявку</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id="popupBg2" class="popup__bg">
+        <div id="popup2" class="popup">
+          <div id="closePopupBtn2" class="close-popup">&#215</div>
+          <div class="popup__top">
+            <div class="popup__title">Отправить форму</div>
+            <div class="popup__text">Наш менеджер свяжется с Вами</div>
+          </div>
+          <form class="popup__form">
+            <div class="popup__inputs">
+              <div class="popup__inputs-top">
+                <input type="text" class="popup__input" placeholder="Имя и Фамилия">
+                <input type="text" class="popup__input" placeholder="Номер телефона">
+                <input type="text" class="popup__input" placeholder="Электронная почта">
+                <!-- <textarea class="popup__textarea" placeholder="Ваш комментарий"></textarea> -->
+              </div>
+              <div class="popup__inputs-bottom">
+                <p class="popup__inputs-link">Нажимая на кнопку, вы соглашаетесь с условиями политики конфеденциальности</p>
+                <div class="popup__box-btn">
+                  <button class="popup__btn btn hero-btn_green">Оставить заявку</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
-
-</html>
 
 </html>

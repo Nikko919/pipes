@@ -37,17 +37,34 @@
 
 // библиотека паралакс
 // Initialize simpleParallax
-document.addEventListener('DOMContentLoaded', function () {
-  // Get all images with parallax class
-  var images = document.querySelectorAll('.thumbnail');
+// document.addEventListener('DOMContentLoaded', function () {
+//   // Get all images with parallax class
+//   var images = document.querySelectorAll('.thumbnail');
 
-  // Initialize simpleParallax with options
-  new simpleParallax(images, {
-    delay: 0.5,
-    orientation: 'up',
-    overflow: false,
-    customContainer: document.querySelector('.card-bottom__box-img'),
-    // scale: 1.1,
-    transition: 'ease'
-  });
+//   // Initialize simpleParallax with options
+//   new simpleParallax(images, {
+//     delay: 0.5,
+//     orientation: 'up',
+//     overflow: false,
+//     customContainer: document.querySelector('.card-bottom__box-img'),
+//     // scale: 1.1,
+//     transition: 'ease'
+//   });
+// });
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  // инициализируем simpleParallax только на десктопах от 1200px
+  if (window.innerWidth >= 1200) {
+    var images = document.querySelectorAll('.thumbnail');
+
+    new simpleParallax(images, {
+      delay: 0.5,
+      orientation: 'up',
+      overflow: false,
+      customContainer: document.querySelector('.card-bottom__box-img'),
+      transition: 'ease'
+    });
+  }
 });

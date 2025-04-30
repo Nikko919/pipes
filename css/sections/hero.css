@@ -415,7 +415,7 @@
 
   .btn-arrow-box:before {
     top: 18px;
-    left: 0px;
+    left: -1px;
     rotate: 360deg;
     background-color: #fff;
     background-color: var(--accent-bg);

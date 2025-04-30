@@ -1,6 +1,6 @@
-.services {
+/* .services {
   margin-bottom: 120px;
-}
+} */
 
 .services__title {
   margin-bottom: 30px;
@@ -305,7 +305,8 @@
 @media(hover:hover) {
   .tab__btn-bottom:hover {
     color: var(--text-color);
-    border: 1px solid var(--text-color);
+    border: 1px solid var(--standart-color);
+    background-color: var(--standart-color);
   }
 
   .tab-toggle:hover .tab-num {

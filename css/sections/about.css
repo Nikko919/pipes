@@ -92,6 +92,7 @@
   .about__card-top {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
   }
 
   .about__card-bottom {
@@ -128,7 +129,6 @@
   .about__card:not(:first-child) {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
   }
 
   .card-bottom {

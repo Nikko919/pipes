@@ -1,5 +1,9 @@
 /* категории  */
 
+.category {
+  margin-top: 20px;
+}
+
 .category__box-btn {
   display: flex;
   flex-direction: column;
@@ -248,6 +252,10 @@
 }
 
 @media(min-width:1200px) {
+  .category {
+    margin-top: 40px;
+  }
+
   .bread-crumbs__wrapper {
     margin-top: 50px;
   }
